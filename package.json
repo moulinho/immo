@@ -1,8 +1,8 @@
 {
-  "name": "immobiler",
+  "name": "Cariere",
   "version": "0.0.1",
   "description": "Immobilier BTP et topographie",
-  "productName": "immobilier",
+  "productName": "Cariere",
   "author": "moulinho <moulinho132@gmail.com>",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build",
+    "deploy": "vercel"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",

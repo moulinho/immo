@@ -13,7 +13,7 @@
           />
 
           <div class="text-black text-body2 text-weight-medium q-mt-md col-2">
-            CARIERE- SARL
+            SARL
           </div>
         </q-toolbar-title>
         <div class="col row justify-end">
@@ -128,7 +128,7 @@
 
     <q-footer class="bg-black q-pa-md">
       <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".6rem" color="amber-8" class="col-1" />
+        <q-separator spaced inset size=".3rem" color="amber-8" class="col-1" />
       </div>
       <div class="row justify-around q-py-md">
         <div class="col-md-7 col-sm-7 col-xs-12">

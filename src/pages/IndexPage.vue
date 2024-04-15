@@ -79,7 +79,7 @@
       </q-carousel-slide>
     </q-carousel>
     <div class="row justify-center q-my-md" id="about">
-      <q-separator spaced inset size=".6rem" color="amber-8" class="col-1" />
+      <q-separator spaced inset size=".3rem" color="amber-8" class="col-1" />
     </div>
     <P class="text-h5 text-weight-bolder text-center"> À propos </P>
 
@@ -88,27 +88,20 @@
         Leader du BTP en Afrique, nous sommes l’entreprise de <br />
         construction de référence.
       </p>
-      <p class="text-h5 text-body1 text-justify text-weight-regular q-pa-xl">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only ﬁve
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      <p class="text-h5 text-h6 text-center text-weight-regular q-pa-xl">
+        Cariere est une société créée par des professionnels du secteur du BTP
+        venant de différentes entreprises de la place les différents
+        travailleurs de connaissaient depuis 2006 déjà et faisaient chemin
+        ensemble.
       </p>
     </div>
     <div class="bg-lime-1 q-py-lg" id="services">
       <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".6rem" color="black" class="col-1" />
+        <q-separator spaced inset size=".3rem" color="black" class="col-1" />
       </div>
       <P class="text-h5 text-weight-bolder text-center"> Services </P>
       <div class="row justify-center q-gutter-md q-px-xl">
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <!-- <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -124,13 +117,10 @@
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Construction, Amenagement et réseaux
           </q-card-section>
-        </q-card>
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        </q-card> -->
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -146,13 +136,12 @@
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Assainissement et gestion des eaux, Infrastructure routière, Génie
+            civil et construction, Aménagement urbain et paysager , Sécurité
+            publique
           </q-card-section>
         </q-card>
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -171,17 +160,15 @@
           /> -->
 
           <q-card-section>
-            <div class="text-h6">Placement de Personnel BTP</div>
+            <div class="text-h6">Formation BTP</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Formation initiale ,Formation spécialisée, L'études de projet,
+            Apprentissage.
           </q-card-section>
         </q-card>
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -204,13 +191,12 @@
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            <!-- Le reprofilage de voies -->
+            Pelleteuses, Bulldozers, Compacteurs, Grues, Camions-bennes,
+            Camions-grues, Chariots élévateurs
           </q-card-section>
         </q-card>
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -226,13 +212,10 @@
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Construction, Amenagement et réseaux.
           </q-card-section>
         </q-card>
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -248,14 +231,12 @@
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            L'électrification rural et pose de poste la fabrication de poteaux
+            électriques.
           </q-card-section>
         </q-card>
 
-        <q-card
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-py-lg q-px-md"
-        >
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
@@ -274,19 +255,77 @@
           /> -->
 
           <q-card-section>
-            <div class="text-h6">vente de matériel et matériaux du btp</div>
+            <div class="text-h6">matériel et matériaux du btp</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Vente et location des matériels et matériaux du btp
+          </q-card-section>
+        </q-card>
+
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="img-btp"
+              src="~assets/img5.jpeg"
+              style="border-radius: 50%"
+              position="40% 10%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+          <!-- <q-avatar
+            size="100px"
+            font-size="52px"
+            color="teal"
+            text-color="white"
+            icon="img:icons/loti.jpg"
+          /> -->
+
+          <q-card-section>
+            <div class="text-h6">Reprofilage de voies</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Évaluation de l'état des voies, Planification des travaux,
+            Préparation du chantier, Contrôle qualité, Nettoyage et remise en
+            service
+          </q-card-section>
+        </q-card>
+
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="img-btp"
+              src="~assets/4806.jpg"
+              style="border-radius: 50%"
+              position="40% 10%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+          <!-- <q-avatar
+            size="100px"
+            font-size="52px"
+            color="teal"
+            text-color="white"
+            icon="img:icons/loti.jpg"
+          /> -->
+
+          <q-card-section>
+            <div class="text-h6">Les terrassements</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Étude géotechnique, Défrichage et démolition, Déblaiement,
+            Remblayage, Modelage du terrain, Contrôle qualité et finition
           </q-card-section>
         </q-card>
       </div>
     </div>
     <div class="bg-black q-py-lg" id="project">
       <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".6rem" color="amber-8" class="col-1" />
+        <q-separator spaced inset size=".3rem" color="amber-8" class="col-1" />
       </div>
       <P class="text-h5 text-weight-bolder text-amber-8 text-center">
         Réalisations
@@ -301,6 +340,7 @@
         navigation
         padding
         arrows
+        infinite
         :autoplay="2500"
         height="350px"
         class="bg-grey-9 shadow-2 rounded-borders"
@@ -323,6 +363,7 @@
               alt="img-btp"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.47.47.jpeg"
+              position="50% 40%"
             >
               <div class="absolute-bottom text-center">
                 Extension réseau Yopougon
@@ -332,6 +373,7 @@
               alt="img-btp"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.50.20.jpeg"
+              position="50% 40%"
             >
               <div class="absolute-bottom text-center">
                 Extension réseau à Akeikoi et à Alepe
