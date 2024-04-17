@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lff">
     <q-header elevated class="bg-white">
-      <q-toolbar class="q-pa-lg">
+      <q-toolbar class="q-py-sm q-px-lg">
         <q-toolbar-title
           :class="$q.screen.lt.sm ? 'col row items-end' : 'col-4 row items-end'"
         >
@@ -27,43 +27,29 @@
             @click="toggleLeftDrawer"
             v-if="$q.screen.lt.sm"
           />
-          <q-tabs
-            v-model="tab"
-            class="text-black"
-            indicator-color="amber"
-            align="justify"
-            v-else
-          >
-            <q-route-tab
-              name="home"
-              label="Acceuil"
-              no-caps
-              class="q-ml-md"
-              href="#home"
-            />
-            <q-route-tab
-              name="about"
-              label="À propos"
-              no-caps
-              class="q-ml-md"
-              href="#about"
-            />
-            <q-route-tab
-              name="services"
-              label="Services"
-              no-caps
-              class="q-ml-md"
-              href="#services"
-            />
-            <q-route-tab
-              name="project"
-              label="Réalisations"
-              no-caps
-              class="q-ml-md"
-              href="#project"
-            />
+          <q-tabs v-model="tab" indicator-color="amber" align="justify" v-else>
+            <q-tab name="home" no-caps class="q-ml-md" href="#home">
+              <a href="#home" class="text-black text-weight-bold"> Acceuil</a>
+            </q-tab>
+            <q-tab name="about" no-caps class="q-ml-md">
+              <a href="#about" class="text-black text-weight-bold">
+                À propos
+              </a>
+            </q-tab>
+            <q-tab name="services" no-caps class="q-ml-md" href="#services">
+              <a href="#services" class="text-black text-weight-bold">
+                Services
+              </a>
+            </q-tab>
+            <q-tab name="project" no-caps class="q-ml-md" href="#project">
+              <a href="#project" class="text-black text-weight-bold">
+                Réalisations
+              </a>
+            </q-tab>
             <!-- <q-tab name="blog" label="Blog" no-caps /> -->
-            <q-tab name="devis" label="Devis" no-caps class="q-ml-md" />
+            <q-tab name="devis" href="#devis" no-caps class="q-ml-md">
+              <a href="#devis" class="text-black text-weight-bold"> Devis </a>
+            </q-tab>
             <q-btn
               color="amber-8"
               rounded
@@ -86,27 +72,27 @@
 
     <q-drawer v-model="leftDrawerOpen" bordered class="q-pa-lg bg-amber-1">
       <div class="text-black column items-center text-weight-bold q-gutter-lg">
-        <q-item clickable tag="a" target="_blank" href="#">
+        <q-item clickable tag="a" href="#home">
           <q-item-section>
             <q-item-label>Acceuil</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="#">
+        <q-item clickable tag="a" href="#about">
           <q-item-section>
             <q-item-label>À propos</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="#">
+        <q-item clickable tag="a" href="#services">
           <q-item-section>
             <q-item-label>Services</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="#">
+        <q-item clickable tag="a" href="#project">
           <q-item-section>
             <q-item-label>Réalisations</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="#">
+        <q-item clickable tag="a" href="#devis">
           <q-item-section>
             <q-item-label>Devis</q-item-label>
           </q-item-section>

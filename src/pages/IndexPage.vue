@@ -36,14 +36,9 @@
               CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE
             </p>
 
-            <q-btn
-              color="amber-8"
-              rounded
-              unelevated
-              label="Obtenir un devis gratuit"
-              class="q-px-lg"
-              no-caps
-            />
+            <q-btn color="amber-8" rounded unelevated class="q-px-lg" no-caps>
+              <a href="#devis" class="text-white"> Obtenir un devis gratuit</a>
+            </q-btn>
           </div>
         </div>
       </q-carousel-slide>
@@ -66,14 +61,9 @@
               ELECTIFICATION
             </p>
 
-            <q-btn
-              color="amber-8"
-              rounded
-              unelevated
-              label="Obtenir un devis gratuit"
-              class="q-px-lg"
-              no-caps
-            />
+            <q-btn color="amber-8" rounded unelevated class="q-px-lg" no-caps>
+              <a href="#devis" class="text-white"> Obtenir un devis gratuit </a>
+            </q-btn>
           </div>
         </div>
       </q-carousel-slide>
@@ -485,67 +475,87 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-    <!-- <div class="">
+    <div class="bg-lime-1 q-py-lg" id="devis">
       <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".6rem" color="black" class="col-1" />
+        <q-separator spaced inset size=".3rem" color="black" class="col-1" />
       </div>
-      <P class="text-h5 text-weight-bolder text-center"> Services </P>
-      <div class="row justify-evenly items-center q-pa-md">
-        <div class="col-md-5 col-sm-5 col-xs-12">
-          <div class="q-ma-xl" style="backdrop-filter: blur(1px)">
-            <p class="text-h5 text-weight-bold">
-              CONSTRUCTION AMENAGEMENT RESEAUX INGENIERIE EQUIPEMENT ROUTES ET
-              ELECTIFICATION
-            </p>
-            <p class="text-body1">
-              Lorem Ipsum is simply dummy text of the printing and <br />
-              typesetting industry. Lorem Ipsum has been the
-            </p>
-            <q-btn
-              color="amber-8"
-              rounded
-              unelevated
-              label="Obtenir un devis gratuit"
-              class="q-px-lg"
-              no-caps
-              @click="onClick"
+      <P class="text-h4 text-weight-bolder text-black text-center q-pa-lg">
+        N'hésitez pas à nous contacter <br />pour demander un Dévis
+      </P>
+      <div class="row justify-center">
+        <q-card class="col-md-4 col-sm-5 col-xs-10 column">
+          <q-form @submit="onSubmit" class="q-gutter-md q-pa-lg">
+            <q-input
+              v-model="form.fullname"
+              outlined
+              color="black"
+              type="text"
+              label="Nom et prénom *"
+              clearable
+              required
             />
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <q-img
-            alt="img-btp"
-            src="~assets/2150440920.jpg"
-            spinner-color="primary"
-            width="100%"
-            height="35rem"
-            spinner-size="82px"
-          />
-        </div>
+            <!-- <div class="row justify-between"> -->
+            <q-input
+              v-model="form.email"
+              color="black"
+              type="email"
+              label="Email"
+              outlined
+              class="col-md-5 col-sm-5 col-xs-12"
+              clearable
+            >
+              <template v-slot:prepend>
+                <q-icon name="mail" color="orange" />
+              </template>
+            </q-input>
+            <q-input
+              v-model="form.contact"
+              color="black"
+              outlined
+              type="tel"
+              label="Contact"
+              class="col-md-5 col-sm-5 col-xs-12"
+              clearable
+            >
+              <template v-slot:prepend>
+                <q-icon name="phone" color="orange" />
+              </template>
+            </q-input>
+            <!-- </div> -->
+            <q-input
+              v-model="form.message"
+              outlined
+              color="black"
+              type="textarea"
+              label="Messages *"
+            />
+            <div class="column">
+              <q-btn
+                label="Envoyer"
+                unelevated
+                no-caps
+                type="submit"
+                color="amber-8"
+              />
+            </div>
+          </q-form>
+        </q-card>
       </div>
-    </div> -->
-
-    <!-- <div class="row justify-center q-my-md">
-      <q-separator spaced inset size=".6rem" color="amber-8" class="col-1" />
     </div>
-    <P class="text-h5 text-weight-bolder text-center"> Devis </P>
-
-    <div class="q-pa-md row">
-      <div class="col">
-        <q-input v-model="text" type="text" label="Label" />
-      </div>
-      <div class="col"></div>
-    </div> -->
   </q-page>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
+const form = ref({});
 defineOptions({
   name: "IndexPage",
 });
 
 const slide = ref("style");
 const slideRealsation = ref(1);
+
+const onSubmit = () => {
+  secd;
+};
 </script>
