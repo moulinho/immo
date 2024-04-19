@@ -9,12 +9,8 @@
             src="~assets/Logo.png"
             spinner-color="amber"
             spinner-size="82px"
-            width="60px"
+            width="70px"
           />
-
-          <div class="text-black text-body2 text-weight-medium q-mt-md col-2">
-            SARL
-          </div>
         </q-toolbar-title>
         <div class="col row justify-end">
           <q-btn

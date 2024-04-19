@@ -5,3 +5,10 @@ html {
 a {
   text-decoration: none;
 }
+.q-tab {
+  min-height: 26px !important;
+}
+.q-tab--active .q-tab__indicator {
+  width: 70% !important;
+  margin: 0 auto !important;
+}
