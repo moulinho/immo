@@ -68,8 +68,8 @@
         </div>
       </q-carousel-slide>
     </q-carousel>
-    <div class="row justify-center q-my-md" id="about">
-      <q-separator spaced inset size=".3rem" color="amber-8" class="col-1" />
+    <div class="row justify-center q-my-md q-px-xl" id="about">
+      <q-separator spaced inset size=".5rem" color="amber-8" class="col-1" />
     </div>
     <P class="text-h5 text-weight-bolder text-center"> À propos </P>
 
@@ -86,8 +86,8 @@
       </p>
     </div>
     <div class="bg-lime-1 q-py-lg" id="services">
-      <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".3rem" color="black" class="col-1" />
+      <div class="row justify-center q-my-md q-px-xl">
+        <q-separator spaced inset size=".5rem" color="black" class="col-1" />
       </div>
       <P class="text-h5 text-weight-bolder text-center"> Services </P>
       <div class="row justify-center q-gutter-md q-px-xl">
@@ -314,8 +314,8 @@
       </div>
     </div>
     <div class="bg-black q-py-lg" id="project">
-      <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".3rem" color="amber-8" class="col-1" />
+      <div class="row justify-center q-my-md q-px-xl">
+        <q-separator spaced inset size=".5rem" color="amber-8" class="col-1" />
       </div>
       <P class="text-h5 text-weight-bolder text-amber-8 text-center">
         Réalisations
@@ -476,8 +476,8 @@
       </q-carousel>
     </div>
     <div class="bg-lime-1 q-py-lg" id="devis">
-      <div class="row justify-center q-my-md">
-        <q-separator spaced inset size=".3rem" color="black" class="col-1" />
+      <div class="row justify-center q-my-md q-px-xl">
+        <q-separator spaced inset size=".5rem" color="black" class="col-1" />
       </div>
       <p class="text-h5 text-black text-center q-px-lg">
         Vous avez un projet immobilier à Abidjan, en Côte d’Ivoire ou dans la
