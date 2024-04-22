@@ -1,3 +1,8 @@
 {
-  "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "/" }]
+  "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "/" }],
+  "git": {
+    "deploymentEnabled": {
+      "main": false
+    }
+  }
 }
