@@ -5,9 +5,7 @@
     <div>
       <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity: 0.7">
-        Oops, site web non disponible
-      </div>
+      <div class="text-h2" style="opacity: 0.7">Oops, site non disponible</div>
 
       <!-- <q-btn
         class="q-mt-xl"
