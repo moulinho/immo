@@ -6,8 +6,7 @@
       <div style="font-size: 30vh">404</div>
 
       <div class="text-h2" style="opacity: 0.7">
-        site web désactivé web pour le non-renouvellement <br />
-        de votre abonnement
+        Oops, site web non disponible
       </div>
 
       <!-- <q-btn
