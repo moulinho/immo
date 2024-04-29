@@ -1,14 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lff">
     <q-header elevated class="bg-white">
-      <q-banner class="bg-negative text-center">
+      <!-- <q-banner class="bg-negative text-center">
         Nous tenons à vous informer que votre contrat d'hébergement arrive à
         expiration le 22/04/2024 à 23:59:59. Nous apprécions sincèrement votre
         confiance en notre service jusqu'à présent. Afin de garantir la
         continuité de votre présence en ligne, nous vous encourageons à
         renouveler votre abonnement dès que possible. Le non-renouvellement de
         votre hébergement entraînera la désactivation de votre site web
-      </q-banner>
+      </q-banner> -->
       <q-toolbar class="q-py-sm q-px-lg">
         <q-toolbar-title
           :class="$q.screen.lt.sm ? 'col row items-end' : 'col-4 row items-end'"
