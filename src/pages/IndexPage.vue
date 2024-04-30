@@ -32,7 +32,7 @@
                   ? 'text-h4 text-weight-bold'
                   : 'text-h3 text-weight-bold'
               "
-            >   
+            >
               CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE
             </p>
 
@@ -495,7 +495,7 @@
       </P>
       <div class="row justify-center q-my-xl">
         <q-card class="col-md-5 col-sm-5 col-xs-10 column">
-          <q-form @submit="onSubmit" class="q-gutter-md q-pa-lg">
+          <q-form @submit.prevent="onSubmit" class="q-gutter-md q-pa-lg">
             <q-select
               outlined
               v-model="form.civility"
@@ -563,7 +563,7 @@
             </q-input>
 
             <q-input
-              v-model="form.contact"
+              v-model="form.adresse"
               color="black"
               outlined
               type="text"
@@ -601,7 +601,7 @@
             </div>
             <q-select
               outlined
-              v-model="form.civility"
+              v-model="form.pays"
               :options="options"
               label="Pays"
               behavior="menu"
@@ -703,25 +703,25 @@ defineOptions({
   name: "IndexPage",
 });
 
-// const slide = ref("style");
-// const slideRealsation = ref(1);
-// currencies.map((currencie) => {
-//   options.value.push({ label: currencie.name, value: currencie.code });
-// });
-// const onSubmit = (event) => {
-//   event.preventDefault(); // prevent reload
-//   var formData = new FormData(this);
-//   formData.append("service_id", process.env.SERVICE_ID);
-//   formData.append("template_id", process.env.TEMPLATE_ID);
-//   formData.append("user_id", process.env.PUBLIC_KEY);
-//   fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
-//     method: "POST",
-//     body: FormData,
-//   }).then((response) => {
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-//     console.log("Response", response);
-//   });
-// };
+const slide = ref("style");
+const slideRealsation = ref(1);
+currencies.map((currencie) => {
+  options.value.push({ label: currencie.name, value: currencie.code });
+});
+const onSubmit = (event) => {
+  //   event.preventDefault(); // prevent reload
+  //   var formData = new FormData(this);
+  //   formData.append("service_id", process.env.SERVICE_ID);
+  //   formData.append("template_id", process.env.TEMPLATE_ID);
+  //   formData.append("user_id", process.env.PUBLIC_KEY);
+  //   fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
+  //     method: "POST",
+  //     body: FormData,
+  //   }).then((response) => {
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! Status: ${response.status}`);
+  //     }
+  //     console.log("Response", response);
+  //   });
+};
 </script>
