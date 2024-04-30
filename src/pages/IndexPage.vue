@@ -679,18 +679,49 @@ import { currencies } from "currencies.json";
 const form = ref({});
 const options = ref([]);
 const civilityOption = ref(["", "Homme", "Femme"]);
+// let data = {
+//   service_id: process.env.SERVICE_ID,
+//   template_id: process.env.TEMPLATE_ID,
+//   user_id: process.env.TEMPLATE_ID.PUBLIC_KEY,
+//   template_params: {
+//     username: "James",
+//     "g-recaptcha-response": "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
+//   },
+// };
+// emailjs
+//   .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, "#myForm")
+//   .then(
+//     (response) => {
+//       console.log("SUCCESS!", response.status, response.text);
+//     },
+//     (error) => {
+//       console.log("FAILED...", error);
+//     }
+//   );
 
 defineOptions({
   name: "IndexPage",
 });
 
-const slide = ref("style");
-const slideRealsation = ref(1);
-currencies.map((currencie) => {
-  console.log("currencie", currencie);
-  options.value.push({ label: currencie.name, value: currencie.code });
-});
-const onSubmit = () => {
-  secd;
-};
+// const slide = ref("style");
+// const slideRealsation = ref(1);
+// currencies.map((currencie) => {
+//   options.value.push({ label: currencie.name, value: currencie.code });
+// });
+// const onSubmit = (event) => {
+//   event.preventDefault(); // prevent reload
+//   var formData = new FormData(this);
+//   formData.append("service_id", process.env.SERVICE_ID);
+//   formData.append("template_id", process.env.TEMPLATE_ID);
+//   formData.append("user_id", process.env.PUBLIC_KEY);
+//   fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
+//     method: "POST",
+//     body: FormData,
+//   }).then((response) => {
+//     if (!response.ok) {
+//       throw new Error(`HTTP error! Status: ${response.status}`);
+//     }
+//     console.log("Response", response);
+//   });
+// };
 </script>
