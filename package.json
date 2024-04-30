@@ -14,7 +14,6 @@
     "deploy": "vercel"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
     "@quasar/extras": "^1.16.4",
     "axios": "^1.6.8",
     "currencies.json": "^1.0.2",

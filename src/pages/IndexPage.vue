@@ -21,7 +21,7 @@
       <!-- autoplay="2500" -->
       <q-carousel-slide
         name="style"
-        img-src="../assets/representation-construction-industry.webp"
+        img-src="~assets/representation-construction-industry.webp"
         class="column no-wrap justify-center"
       >
         <div class="row">
@@ -32,7 +32,7 @@
                   ? 'text-h4 text-weight-bold'
                   : 'text-h3 text-weight-bold'
               "
-            >
+            >   
               CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE
             </p>
 
@@ -45,7 +45,7 @@
 
       <q-carousel-slide
         name="tv"
-        img-src="../assets/img6.jpg"
+        img-src="~assets/img6.jpg"
         class="column no-wrap justify-center"
       >
         <div class="row">
