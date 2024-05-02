@@ -122,7 +122,7 @@
           </q-avatar>
 
           <q-card-section>
-            <div class="text-h6">Travaux Publics</div>
+            <div class="text-h6">Travaux publics</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -177,7 +177,7 @@
           /> -->
 
           <q-card-section>
-            <div class="text-h6">Location Engins de Chantier</div>
+            <div class="text-h6">Location engins de chantier</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -245,7 +245,7 @@
           /> -->
 
           <q-card-section>
-            <div class="text-h6">matériel et matériaux du btp</div>
+            <div class="text-h6">Matériel et matériaux du btp</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
