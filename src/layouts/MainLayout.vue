@@ -14,7 +14,7 @@
           :class="$q.screen.lt.sm ? 'col row items-end' : 'col-4 row items-end'"
         >
           <q-img
-            src="~assets/Logo.png"
+            src="~assets/Logo.webp"
             spinner-color="amber"
             spinner-size="82px"
             width="70px"
@@ -144,7 +144,6 @@
             </a>
             <div class="">
               <q-btn
-              
                 icon="img:icons/facebook.svg"
                 size="lg"
                 class="q-pl-none"

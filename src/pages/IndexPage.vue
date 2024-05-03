@@ -45,7 +45,7 @@
 
       <q-carousel-slide
         name="tv"
-        img-src="~assets/img6.jpg"
+        img-src="~assets/img6.webp"
         class="column no-wrap justify-center"
       >
         <div class="row">
@@ -162,7 +162,7 @@
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
-              src="~assets/engin.jpg"
+              src="~assets/engin.webp"
               style="border-radius: 50%"
               width="100%"
               height="100%"
@@ -287,7 +287,7 @@
           <q-avatar size="8rem">
             <q-img
               alt="terrassements"
-              src="~assets/4806.jpg"
+              src="~assets/4806.webp"
               style="border-radius: 50%"
               position="40% 10%"
               width="100%"
