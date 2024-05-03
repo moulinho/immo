@@ -113,7 +113,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="travaux publics"
               src="~assets/img.jpeg"
               style="border-radius: 50%"
               width="100%"
@@ -189,7 +189,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="Lotissements"
               src="~assets/loti.jpg"
               style="border-radius: 50%"
               width="100%"
@@ -208,7 +208,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="Electrification"
               src="~assets/electrification.jpg"
               style="border-radius: 50%"
               width="100%"
@@ -229,7 +229,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="matériaux"
               src="~assets/Matériel-de-chantier.jpg"
               style="border-radius: 50%"
               width="100%"
@@ -256,7 +256,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="Reprofilage"
               src="~assets/img5.jpeg"
               style="border-radius: 50%"
               position="40% 10%"
@@ -286,7 +286,7 @@
         <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
+              alt="terrassements"
               src="~assets/4806.jpg"
               style="border-radius: 50%"
               position="40% 10%"
@@ -340,7 +340,7 @@
             class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
           >
             <q-img
-              alt="img-btp"
+              alt="Immeuble"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/img4.jpeg"
             >
@@ -350,7 +350,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Extension réseau"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.47.47.jpeg"
               position="50% 40%"
@@ -360,7 +360,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Extension réseau Akeikoi"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.50.20.jpeg"
               position="50% 40%"
@@ -376,7 +376,7 @@
             class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
           >
             <q-img
-              alt="img-btp"
+              alt="Ouverture de voies"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.54.19.jpeg"
             >
@@ -385,7 +385,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="azaguie"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 11.58.33.jpeg"
               position="50% 40%"
@@ -395,7 +395,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="engin"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/engin.jpg"
               fit=""
@@ -411,7 +411,7 @@
             class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
           >
             <q-img
-              alt="img-btp"
+              alt="Terrassement à bassam"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 12.03.20.jpeg"
               position="50% 30%"
@@ -421,7 +421,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Terrassement à azaguie"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 12.15.39.jpeg"
               position="50% 20%"
@@ -431,7 +431,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Terrassement à malbert"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/img5.jpeg"
               position="50% 10%"
@@ -447,7 +447,7 @@
             class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
           >
             <q-img
-              alt="img-btp"
+              alt="Construction"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
               src="~assets/img.jpeg"
             >
@@ -456,7 +456,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Construction"
               class="rounded-borders col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 12.29.29.jpeg"
             >
@@ -465,7 +465,7 @@
               </div>
             </q-img>
             <q-img
-              alt="img-btp"
+              alt="Travaux de finition"
               class="rounded-borders col-sm-3 col-xs-6 full-height"
               src="~assets/WhatsApp Image 2024-04-13 at 12.32.19.jpeg"
             >

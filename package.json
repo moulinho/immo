@@ -1,8 +1,8 @@
 {
   "name": "cariere.ci",
   "version": "0.0.5",
-  "description": "Leader du BTP en Afrique dans Immobilier, BTP et topographie, nous sommes l'entreprise de construction de référence, synonyme d'excellence et d'innovation. Forts d'une expertise inégalée et d'un engagement indéfectible envers la qualité, nous avons façonné des paysages urbains emblématiques à travers le continent. Notre réputation repose sur notre capacité à livrer des projets de grande envergure dans les délais impartis, tout en respectant les normes les plus strictes de durabilité et de sécurité",
-  "productName": "cariere.ci",
+  "description": "Expertise en construction BTP, immobilier et topographie. Nous façonnons des paysages urbains, offrons des solutions immobilières de qualité et fournissons des services topographiques précis pour répondre à vos besoins depuis 2006.",
+  "productName": "Construction BTP, Immobilier et Topographie",
   "author": "moulinho <moulinho132@gmail.com>",
   "private": true,
   "scripts": {
