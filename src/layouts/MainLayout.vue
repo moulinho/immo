@@ -144,6 +144,7 @@
             </a>
             <div class="">
               <q-btn
+              
                 icon="img:icons/facebook.svg"
                 size="lg"
                 class="q-pl-none"
