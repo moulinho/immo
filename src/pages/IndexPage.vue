@@ -135,7 +135,7 @@
           <q-avatar size="8rem">
             <q-img
               alt="img-btp"
-              src="~assets/placement.jpg"
+              src="~assets/placement.webp"
               style="border-radius: 50%"
               width="100%"
               height="100%"
@@ -397,7 +397,7 @@
             <q-img
               alt="engin"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
-              src="~assets/engin.jpg"
+              src="~assets/engin.webp"
               fit=""
             >
               <div class="absolute-bottom text-center">
