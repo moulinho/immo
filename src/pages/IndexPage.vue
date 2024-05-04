@@ -45,7 +45,7 @@
 
       <q-carousel-slide
         name="tv"
-        img-src="~assets/img6.webp"
+        img-src="~assets/img6.jpg"
         class="column no-wrap justify-center"
       >
         <div class="row">
