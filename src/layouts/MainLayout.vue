@@ -143,21 +143,23 @@
               societecariere@gmail.com
             </a>
             <div class="">
-              <q-btn
+              <!-- <q-btn
                 icon="img:icons/facebook.svg"
                 size="lg"
                 class="q-pl-none"
-              />
+              /> -->
               <q-btn
                 icon="img:icons/whatsapp.svg"
                 size="lg"
                 class="q-pl-none"
+                href="https://wa.me/+2250101738500?text=J'aimerais apprendre plus sur vos services"
+                target="_blank'"
               />
-              <q-btn
+              <!-- <q-btn
                 icon="img:icons/linkedin.svg"
                 size="lg"
                 class="q-pl-none"
-              />
+              /> -->
             </div>
           </div>
         </div>
