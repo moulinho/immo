@@ -480,27 +480,51 @@
             <q-img
               alt="Construction"
               class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
-              src="~assets/img.jpeg"
+              src="~assets/akeikoi1.jpeg"
             >
-              <div class="absolute-bottom text-center">
-                Construction de villas à songon
-              </div>
+              <div class="absolute-bottom text-center">abobo akeikoi</div>
             </q-img>
             <q-img
               alt="Construction"
-              class="rounded-borders col-sm-3 col-xs-6 full-height"
-              src="~assets/WhatsApp Image 2024-04-13 at 12.29.29.jpeg"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/akeikoi2.jpeg"
             >
-              <div class="absolute-bottom text-center">
-                Construction de villas à songon
-              </div>
+              <div class="absolute-bottom text-center">abobo akeikoi</div>
             </q-img>
             <q-img
-              alt="Travaux de finition"
-              class="rounded-borders col-sm-3 col-xs-6 full-height"
-              src="~assets/WhatsApp Image 2024-04-13 at 12.32.19.jpeg"
+              alt="Construction"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/akeikoi3.jpeg"
             >
-              <div class="absolute-bottom text-center">Travaux de finition</div>
+              <div class="absolute-bottom text-center">abobo akeikoi</div>
+            </q-img>
+          </div>
+        </q-carousel-slide>
+
+        <q-carousel-slide :name="6" class="column no-wrap">
+          <div
+            class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
+          >
+            <q-img
+              alt="Construction"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/akeikoi4.jpeg"
+            >
+              <div class="absolute-bottom text-center">abobo akeikoi</div>
+            </q-img>
+            <q-img
+              alt="Construction"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/attinguie.jpeg"
+            >
+              <div class="absolute-bottom text-center">attinguie</div>
+            </q-img>
+            <q-img
+              alt="Construction"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/attinguie1.jpeg"
+            >
+              <div class="absolute-bottom text-center">attinguie</div>
             </q-img>
           </div>
         </q-carousel-slide>
