@@ -473,6 +473,37 @@
             </q-img>
           </div>
         </q-carousel-slide>
+        <q-carousel-slide :name="5" class="column no-wrap">
+          <div
+            class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap"
+          >
+            <q-img
+              alt="Construction"
+              class="rounded-borders col-md-3 col-sm-3 col-xs-6 full-height"
+              src="~assets/img.jpeg"
+            >
+              <div class="absolute-bottom text-center">
+                Construction de villas à songon
+              </div>
+            </q-img>
+            <q-img
+              alt="Construction"
+              class="rounded-borders col-sm-3 col-xs-6 full-height"
+              src="~assets/WhatsApp Image 2024-04-13 at 12.29.29.jpeg"
+            >
+              <div class="absolute-bottom text-center">
+                Construction de villas à songon
+              </div>
+            </q-img>
+            <q-img
+              alt="Travaux de finition"
+              class="rounded-borders col-sm-3 col-xs-6 full-height"
+              src="~assets/WhatsApp Image 2024-04-13 at 12.32.19.jpeg"
+            >
+              <div class="absolute-bottom text-center">Travaux de finition</div>
+            </q-img>
+          </div>
+        </q-carousel-slide>
       </q-carousel>
     </div>
     <div class="bg-lime-1 q-py-lg" id="devis">
