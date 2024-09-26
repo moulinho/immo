@@ -1,3 +1,102 @@
+<script setup>
+import { ref } from "vue";
+import { currencies } from "currencies.json";
+
+const form = ref({});
+const options = ref([]);
+const civilityOption = ref(["", "Homme", "Femme"]);
+defineOptions({
+  name: "IndexPage",
+});
+
+const slide = ref("style");
+const slideRealsation = ref(1);
+currencies.map((currencie) => {
+  options.value.push({ label: currencie.name, value: currencie.code });
+});
+
+const heros = ref([
+  {
+    id: 1,
+    name: "style",
+    img: "src/assets/representation-construction-industry.webp",
+    title: "CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE",
+    textButton: "Obtenir un devis gratuit",
+  },
+  {
+    id: 2,
+    name: "tv",
+    img: "src/assets/img6.jpg",
+    title: "EQUIPEMENT ROUTES ET <br />ELECTIFICATION",
+    textButton: "Obtenir un devis gratuit",
+  },
+]);
+
+const services = ref([
+  {
+    id: 1,
+    img: "src/assets/img.jpeg",
+    title: "Travaux publics",
+    description:
+      "Assainissement et gestion des eaux, Infrastructure routière, Génie civil et construction, Aménagement urbain et paysager , Sécurité publique",
+  },
+  {
+    id: 2,
+    img: "src/assets/placement.webp",
+    title: "Formation BTP",
+    description:
+      "Formation initiale ,Formation spécialisée, L'études de projet, Apprentissage.",
+  },
+  {
+    id: 3,
+    img: "src/assets/engin.webp",
+    title: "Location engins de chantier",
+    description:
+      "Pelleteuses, Bulldozers, Compacteurs, Grues, Camions-bennes,Camions-grues, Chariots élévateurs",
+  },
+  {
+    id: 4,
+    img: "src/assets/loti.jpg",
+    title: "Lotissements",
+    description: "Construction, Amenagement et réseaux.",
+  },
+  {
+    id: 5,
+    img: "src/assets/electrification.jpg",
+    title: "Electrification",
+    description:
+      "L'électrification rural et pose de poste la fabrication de poteaux électriques.",
+  },
+  {
+    id: 6,
+    img: "src/assets/Matériel-de-chantier.jpg",
+    title: "Matériel et matériaux du btp",
+    description: "Vente et location des matériels et matériaux du btp",
+  },
+  {
+    id: 7,
+    img: "src/assets/img5.jpeg",
+    title: "Reprofilage de voies",
+    description:
+      "Évaluation de l'état des voies, Planification des travaux,Préparation du chantier, Contrôle qualité, Nettoyage et remise en service.",
+  },
+  {
+    id: 8,
+    img: "src/assets/4806.webp",
+    title: "Les terrassements",
+    description:
+      "Étude géotechnique, Défrichage et démolition, Déblaiement,Remblayage, Modelage du terrain, Contrôle qualité et finition.",
+  },
+]);
+
+const realisation = ref([
+  {
+    id: 1,
+  },
+]);
+const onSubmit = (event) => {};
+</script>
+
 <template>
   <q-page class="" id="home">
     <q-carousel
@@ -19,9 +118,12 @@
       class="bg-transparent"
     >
       <!-- autoplay="2500" -->
+
       <q-carousel-slide
-        name="style"
-        img-src="~assets/representation-construction-industry.webp"
+        v-for="item in heros"
+        :key="item.id"
+        :name="item.name"
+        :img-src="item.img"
         class="column no-wrap justify-center"
       >
         <div class="row">
@@ -33,17 +135,17 @@
                   : 'text-h3 text-weight-bold'
               "
             >
-              CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE
+              {{ item.title }}
             </p>
 
             <q-btn color="amber-8" rounded unelevated class="q-px-lg" no-caps>
-              <a href="#devis" class="text-white"> Obtenir un devis gratuit</a>
+              <a href="#devis" class="text-white"> {{ item.textButton }}</a>
             </q-btn>
           </div>
         </div>
       </q-carousel-slide>
 
-      <q-carousel-slide
+      <!-- <q-carousel-slide
         name="tv"
         img-src="~assets/img6.jpg"
         class="column no-wrap justify-center"
@@ -66,7 +168,7 @@
             </q-btn>
           </div>
         </div>
-      </q-carousel-slide>
+      </q-carousel-slide> -->
     </q-carousel>
     <div class="row justify-center q-my-md q-px-xl" id="about">
       <q-separator spaced inset size=".5rem" color="amber-8" class="col-1" />
@@ -91,11 +193,15 @@
       </div>
       <P class="text-h5 text-weight-bolder text-center"> Services </P>
       <div class="row justify-center q-gutter-md q-px-xl">
-        <!-- <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+        <q-card
+          v-for="service in services"
+          :key="service.id"
+          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg"
+        >
           <q-avatar size="8rem">
             <q-img
-              alt="img-btp"
-              src="~assets/bati.jpg"
+              :alt="service.title"
+              :src="service.img"
               style="border-radius: 50%"
               width="100%"
               height="100%"
@@ -103,212 +209,11 @@
           </q-avatar>
 
           <q-card-section>
-            <div class="text-h6">Bâtiment</div>
+            <div class="text-h6">{{ service.title }}</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            Construction, Amenagement et réseaux
-          </q-card-section>
-        </q-card> -->
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="travaux publics"
-              src="~assets/img.jpeg"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-
-          <q-card-section>
-            <div class="text-h6">Travaux publics</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Assainissement et gestion des eaux, Infrastructure routière, Génie
-            civil et construction, Aménagement urbain et paysager , Sécurité
-            publique
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="img-btp"
-              src="~assets/placement.webp"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-          <!-- <q-avatar
-            size="100px"
-            font-size="52px"
-            color="teal"
-            text-color="white"
-            icon="img:icons/loti.jpg"
-          /> -->
-
-          <q-card-section>
-            <div class="text-h6">Formation BTP</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Formation initiale ,Formation spécialisée, L'études de projet,
-            Apprentissage.
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="img-btp"
-              src="~assets/engin.webp"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-          <!-- <q-avatar
-            size="100px"
-            font-size="52px"
-            color="teal"
-            text-color="white"
-            icon="img:icons/loti.jpg"
-          /> -->
-
-          <q-card-section>
-            <div class="text-h6">Location engins de chantier</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            <!-- Le reprofilage de voies -->
-            Pelleteuses, Bulldozers, Compacteurs, Grues, Camions-bennes,
-            Camions-grues, Chariots élévateurs
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="Lotissements"
-              src="~assets/loti.jpg"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-
-          <q-card-section>
-            <div class="text-h6">Lotissements</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Construction, Amenagement et réseaux.
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="Electrification"
-              src="~assets/electrification.jpg"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-
-          <q-card-section>
-            <div class="text-h6">Electrification</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            L'électrification rural et pose de poste la fabrication de poteaux
-            électriques.
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="matériaux"
-              src="~assets/Matériel-de-chantier.jpg"
-              style="border-radius: 50%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-          <!-- <q-avatar
-            size="100px"
-            font-size="52px"
-            color="teal"
-            text-color="white"
-            icon="img:icons/loti.jpg"
-          /> -->
-
-          <q-card-section>
-            <div class="text-h6">Matériel et matériaux du btp</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Vente et location des matériels et matériaux du btp
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="Reprofilage"
-              src="~assets/img5.jpeg"
-              style="border-radius: 50%"
-              position="40% 10%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-          <!-- <q-avatar
-            size="100px"
-            font-size="52px"
-            color="teal"
-            text-color="white"
-            icon="img:icons/loti.jpg"
-          /> -->
-
-          <q-card-section>
-            <div class="text-h6">Reprofilage de voies</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Évaluation de l'état des voies, Planification des travaux,
-            Préparation du chantier, Contrôle qualité, Nettoyage et remise en
-            service
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
-          <q-avatar size="8rem">
-            <q-img
-              alt="terrassements"
-              src="~assets/4806.webp"
-              style="border-radius: 50%"
-              position="40% 10%"
-              width="100%"
-              height="100%"
-            />
-          </q-avatar>
-          <!-- <q-avatar
-            size="100px"
-            font-size="52px"
-            color="teal"
-            text-color="white"
-            icon="img:icons/loti.jpg"
-          /> -->
-
-          <q-card-section>
-            <div class="text-h6">Les terrassements</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            Étude géotechnique, Défrichage et démolition, Déblaiement,
-            Remblayage, Modelage du terrain, Contrôle qualité et finition
+            {{ service.description }}
           </q-card-section>
         </q-card>
       </div>
@@ -726,57 +631,3 @@
     </div>
   </q-page>
 </template>
-
-<script setup>
-import { ref } from "vue";
-import { currencies } from "currencies.json";
-
-const form = ref({});
-const options = ref([]);
-const civilityOption = ref(["", "Homme", "Femme"]);
-// let data = {
-//   service_id: process.env.SERVICE_ID,
-//   template_id: process.env.TEMPLATE_ID,
-//   user_id: process.env.TEMPLATE_ID.PUBLIC_KEY,
-//   template_params: {
-//     username: "James",
-//     "g-recaptcha-response": "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
-//   },
-// };
-// emailjs
-//   .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, "#myForm")
-//   .then(
-//     (response) => {
-//       console.log("SUCCESS!", response.status, response.text);
-//     },
-//     (error) => {
-//       console.log("FAILED...", error);
-//     }
-//   );
-
-defineOptions({
-  name: "IndexPage",
-});
-
-const slide = ref("style");
-const slideRealsation = ref(1);
-currencies.map((currencie) => {
-  options.value.push({ label: currencie.name, value: currencie.code });
-});
-const onSubmit = (event) => {
-  //   event.preventDefault(); // prevent reload
-  //   var formData = new FormData(this);
-  //   formData.append("service_id", process.env.SERVICE_ID);
-  //   formData.append("template_id", process.env.TEMPLATE_ID);
-  //   formData.append("user_id", process.env.PUBLIC_KEY);
-  //   fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
-  //     method: "POST",
-  //     body: FormData,
-  //   }).then((response) => {
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error! Status: ${response.status}`);
-  //     }
-  //     console.log("Response", response);
-  //   });
-};
-</script>
