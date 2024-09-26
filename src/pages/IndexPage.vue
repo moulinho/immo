@@ -1,102 +1,3 @@
-<script setup>
-import { ref } from "vue";
-import { currencies } from "currencies.json";
-
-const form = ref({});
-const options = ref([]);
-const civilityOption = ref(["", "Homme", "Femme"]);
-defineOptions({
-  name: "IndexPage",
-});
-
-const slide = ref("style");
-const slideRealsation = ref(1);
-currencies.map((currencie) => {
-  options.value.push({ label: currencie.name, value: currencie.code });
-});
-
-const heros = ref([
-  {
-    id: 1,
-    name: "style",
-    img: "src/assets/representation-construction-industry.webp",
-    title: "CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE",
-    textButton: "Obtenir un devis gratuit",
-  },
-  {
-    id: 2,
-    name: "tv",
-    img: "src/assets/img6.jpg",
-    title: "EQUIPEMENT ROUTES ET <br />ELECTIFICATION",
-    textButton: "Obtenir un devis gratuit",
-  },
-]);
-
-const services = ref([
-  {
-    id: 1,
-    img: "src/assets/img.jpeg",
-    title: "Travaux publics",
-    description:
-      "Assainissement et gestion des eaux, Infrastructure routière, Génie civil et construction, Aménagement urbain et paysager , Sécurité publique",
-  },
-  {
-    id: 2,
-    img: "src/assets/placement.webp",
-    title: "Formation BTP",
-    description:
-      "Formation initiale ,Formation spécialisée, L'études de projet, Apprentissage.",
-  },
-  {
-    id: 3,
-    img: "src/assets/engin.webp",
-    title: "Location engins de chantier",
-    description:
-      "Pelleteuses, Bulldozers, Compacteurs, Grues, Camions-bennes,Camions-grues, Chariots élévateurs",
-  },
-  {
-    id: 4,
-    img: "src/assets/loti.jpg",
-    title: "Lotissements",
-    description: "Construction, Amenagement et réseaux.",
-  },
-  {
-    id: 5,
-    img: "src/assets/electrification.jpg",
-    title: "Electrification",
-    description:
-      "L'électrification rural et pose de poste la fabrication de poteaux électriques.",
-  },
-  {
-    id: 6,
-    img: "src/assets/Matériel-de-chantier.jpg",
-    title: "Matériel et matériaux du btp",
-    description: "Vente et location des matériels et matériaux du btp",
-  },
-  {
-    id: 7,
-    img: "src/assets/img5.jpeg",
-    title: "Reprofilage de voies",
-    description:
-      "Évaluation de l'état des voies, Planification des travaux,Préparation du chantier, Contrôle qualité, Nettoyage et remise en service.",
-  },
-  {
-    id: 8,
-    img: "src/assets/4806.webp",
-    title: "Les terrassements",
-    description:
-      "Étude géotechnique, Défrichage et démolition, Déblaiement,Remblayage, Modelage du terrain, Contrôle qualité et finition.",
-  },
-]);
-
-const realisation = ref([
-  {
-    id: 1,
-  },
-]);
-const onSubmit = (event) => {};
-</script>
-
 <template>
   <q-page class="" id="home">
     <q-carousel
@@ -118,12 +19,9 @@ const onSubmit = (event) => {};
       class="bg-transparent"
     >
       <!-- autoplay="2500" -->
-
       <q-carousel-slide
-        v-for="item in heros"
-        :key="item.id"
-        :name="item.name"
-        :img-src="item.img"
+        name="style"
+        img-src="~assets/representation-construction-industry.webp"
         class="column no-wrap justify-center"
       >
         <div class="row">
@@ -135,17 +33,17 @@ const onSubmit = (event) => {};
                   : 'text-h3 text-weight-bold'
               "
             >
-              {{ item.title }}
+              CONSTRUCTION AMENAGEMENT <br />RESEAUX INGENIERIE
             </p>
 
             <q-btn color="amber-8" rounded unelevated class="q-px-lg" no-caps>
-              <a href="#devis" class="text-white"> {{ item.textButton }}</a>
+              <a href="#devis" class="text-white"> Obtenir un devis gratuit</a>
             </q-btn>
           </div>
         </div>
       </q-carousel-slide>
 
-      <!-- <q-carousel-slide
+      <q-carousel-slide
         name="tv"
         img-src="~assets/img6.jpg"
         class="column no-wrap justify-center"
@@ -168,7 +66,7 @@ const onSubmit = (event) => {};
             </q-btn>
           </div>
         </div>
-      </q-carousel-slide> -->
+      </q-carousel-slide>
     </q-carousel>
     <div class="row justify-center q-my-md q-px-xl" id="about">
       <q-separator spaced inset size=".5rem" color="amber-8" class="col-1" />
@@ -193,15 +91,11 @@ const onSubmit = (event) => {};
       </div>
       <P class="text-h5 text-weight-bolder text-center"> Services </P>
       <div class="row justify-center q-gutter-md q-px-xl">
-        <q-card
-          v-for="service in services"
-          :key="service.id"
-          class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg"
-        >
+        <!-- <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
           <q-avatar size="8rem">
             <q-img
-              :alt="service.title"
-              :src="service.img"
+              alt="img-btp"
+              src="~assets/bati.jpg"
               style="border-radius: 50%"
               width="100%"
               height="100%"
@@ -209,11 +103,198 @@ const onSubmit = (event) => {};
           </q-avatar>
 
           <q-card-section>
-            <div class="text-h6">{{ service.title }}</div>
+            <div class="text-h6">Bâtiment</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none">
-            {{ service.description }}
+            Construction, Amenagement et réseaux
+          </q-card-section>
+        </q-card> -->
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="travaux publics"
+              src="~assets/img.jpeg"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+
+          <q-card-section>
+            <div class="text-h6">Travaux publics</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Assainissement et gestion des eaux, Infrastructure routière, Génie
+            civil et construction, Aménagement urbain et paysager , Sécurité
+            publique
+          </q-card-section>
+        </q-card>
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="img-btp"
+              src="~assets/placement.webp"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+          <!-- <q-avatar
+            size="100px"
+            font-size="52px"
+            color="teal"
+            text-color="white"
+            icon="img:icons/loti.jpg"
+          /> -->
+
+          <q-card-section>
+            <div class="text-h6">Formation BTP</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Formation initiale ,Formation spécialisée, L'études de projet,
+            Apprentissage.
+          </q-card-section>
+        </q-card>
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="img-btp"
+              src="~assets/engin.webp"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+          <!-- <q-avatar
+            size="100px"
+            font-size="52px"
+            color="teal"
+            text-color="white"
+            icon="img:icons/loti.jpg"
+          /> -->
+
+          <q-card-section>
+            <div class="text-h6">Location engins de chantier</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            <!-- Le reprofilage de voies -->
+            Pelleteuses, Bulldozers, Compacteurs, Grues, Camions-bennes,
+            Camions-grues, Chariots élévateurs
+          </q-card-section>
+        </q-card>
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="Lotissements"
+              src="~assets/loti.jpg"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+
+          <q-card-section>
+            <div class="text-h6">Lotissements</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Construction, Amenagement et réseaux.
+          </q-card-section>
+        </q-card>
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="Electrification"
+              src="~assets/electrification.jpg"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+
+          <q-card-section>
+            <div class="text-h6">Electrification</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            L'électrification rural et pose de poste la fabrication de poteaux
+            électriques.
+          </q-card-section>
+        </q-card>
+
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="matériaux"
+              src="~assets/Matériel-de-chantier.jpg"
+              style="border-radius: 50%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+
+          <q-card-section>
+            <div class="text-h6">Matériel et matériaux du btp</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Vente et location des matériels et matériaux du btp
+          </q-card-section>
+        </q-card>
+
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="Reprofilage"
+              src="~assets/img5.jpeg"
+              style="border-radius: 50%"
+              position="40% 10%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+          <!-- <q-avatar
+            size="100px"
+            font-size="52px"
+            color="teal"
+            text-color="white"
+            icon="img:icons/loti.jpg"
+          /> -->
+
+          <q-card-section>
+            <div class="text-h6">Reprofilage de voies</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Évaluation de l'état des voies, Planification des travaux,
+            Préparation du chantier, Contrôle qualité, Nettoyage et remise en
+            service
+          </q-card-section>
+        </q-card>
+
+        <q-card class="my-card col-md-3 col-sm-3 col-xs-12 text-center q-pa-lg">
+          <q-avatar size="8rem">
+            <q-img
+              alt="terrassements"
+              src="~assets/4806.webp"
+              style="border-radius: 50%"
+              position="40% 10%"
+              width="100%"
+              height="100%"
+            />
+          </q-avatar>
+
+          <q-card-section>
+            <div class="text-h6">Les terrassements</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            Étude géotechnique, Défrichage et démolition, Déblaiement,
+            Remblayage, Modelage du terrain, Contrôle qualité et finition
           </q-card-section>
         </q-card>
       </div>
@@ -494,7 +575,6 @@ const onSubmit = (event) => {};
               label="Nom ou raison sociale de l'entreprise demandeuse"
               hint="Mettez 'Particulier' si vous ne présentez pas une entreprise"
             />
-            <!-- <div class="row justify-between"> -->
             <q-input
               v-model="form.email"
               color="black"
@@ -576,7 +656,6 @@ const onSubmit = (event) => {};
               required
               class="col-md-6 col-sm-5 col-xs-12"
             />
-            <!-- </div> -->
 
             <q-input
               v-model="form.message"
@@ -585,7 +664,6 @@ const onSubmit = (event) => {};
               type="textarea"
               label="Demande *"
             />
-            <!-- <div class=""> -->
             <ul class="q-mx-none q-my-lg text-body1">
               <li>
                 Pour obtenir des devis précis, merci de fournir le plus
@@ -611,7 +689,6 @@ const onSubmit = (event) => {};
                 actuelles.
               </li>
             </ul>
-            <!-- </div> -->
             <div class="row">
               <q-btn
                 label="Envoyer"
@@ -631,3 +708,23 @@ const onSubmit = (event) => {};
     </div>
   </q-page>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import { currencies } from "currencies.json";
+
+const form = ref({});
+const options = ref([]);
+const civilityOption = ref(["", "Homme", "Femme"]);
+
+defineOptions({
+  name: "IndexPage",
+});
+
+const slide = ref("style");
+const slideRealsation = ref(1);
+currencies.map((currencie) => {
+  options.value.push({ label: currencie.name, value: currencie.code });
+});
+const onSubmit = (event) => {};
+</script>
